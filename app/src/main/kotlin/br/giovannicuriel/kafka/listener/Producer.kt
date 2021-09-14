@@ -8,10 +8,9 @@ import org.springframework.stereotype.Service
 
 @Service
 class Producer(
-    @Value("\${kafka.topic}")
+    @Value("\${kafka.dog_topic}")
     private val topicName: String,
     private val template: KafkaTemplate<String, DogAdoptionEvent>,
-    private val mapper: ObjectMapper
 ){
 
     fun send(request: DogAdoptionEvent) {

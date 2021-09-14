@@ -7,6 +7,8 @@ docker-compose up -d
 
 # Register the avro schema, under subject "br.giovannicuriel.kafka.dog_adoption_event-value"
 
+./gradlew registerSchemasTask
+
 ./gradlew clean build
 
 # If you have no avro schema, but it does exist in Schema Registry, you could download it by executing

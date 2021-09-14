@@ -30,6 +30,10 @@ schemaRegistry {
     download {
         subject("br.giovannicuriel.kafka.dog_adoption_event-value", "app/src/main/avro")
     }
+
+    register {
+        subject("br.giovannicuriel.kafka.dog_adoption_event-value", "app/src/main/avro/br.giovannicuriel.kafka.dog_adoption_event-value.avsc", "AVRO")
+    }
 }
 
 avro {

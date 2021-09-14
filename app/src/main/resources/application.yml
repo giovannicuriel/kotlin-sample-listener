@@ -22,4 +22,5 @@ spring:
     mapper:
       ACCEPT_CASE_INSENSITIVE_ENUMS: true
 kafka:
-  topic: "br.giovannicuriel.dog_event_super"
+  dog_topic: "br.giovannicuriel.kafka.dog_adoption_event"
+  group_id: "dog-event-processors"
